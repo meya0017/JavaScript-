@@ -7,7 +7,7 @@ firstName = "sumeya"
 console.log(typeof firstName); // string
 
 
-var firstNames = ["Aisha", "Halima", "zeinab"];
+var firstNames = ["susu", "Halima", "zeinab"];
 console.log(typeof firstNames); // object
 
 var ages = [25, 50, 49];

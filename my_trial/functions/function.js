@@ -56,14 +56,23 @@
 // console.log(result)
 // console.log(result2)
 
-function add (numb1,numb2) {
-    return 7+5
-}
-var sum = add(7+5)
-console.log(sum)
 
-var add = function (num1,num2) {
-    return num1 + num2; 
-}
-var sum = add(7, 12)
-console.log(sum)
+//Anonymous function
+function multiply (a,b) {
+    return  a * b;
+} 
+var result = multiply (4*3)
+var result2 = multiply (12*5)
+console.log(4*3);
+console.log(12*5);
+
+//variable function
+// var multiply = function (a,b) {
+//     return (a * b)
+// }                       
+
+// var result = multiply(5 * 5)
+// console.log(5*5);
+
+
+
