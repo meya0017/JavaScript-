@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ES6 Examples - All in One</title>
+</head>
+<body>
+  <h1>✅ Open the browser console (F12 → Console) to see ES6 examples output</h1>
+
+  <script>
+    // =============================
+    // ES6 Examples - All in One
+    // =============================
+
+    // 1. let & const
+    let age = 25;
+    const pi = 3.14;
+    console.log("Age:", age, "Pi:", pi);
+
+    // 2. Arrow Functions
+    const add = (a, b) => a + b;
+    console.log("Add:", add(5, 3));
+
+    // 3. Template Literals
+    const name = "Meya";
+    console.log(`Hello, ${name}! You are ${age} years old.`);
+
+    // 4. Default Parameters
+    const multiply = (a, b = 2) => a * b;
+    console.log("Multiply:", multiply(5));
+
+    // 5. Destructuring
+    const user = { id: 1, username: "Meya", role: "admin" };
+    const { username, role } = user;
+    console.log("User:", username, role);
+
+    const numbers = [10, 20, 30];
+    const [first, second] = numbers;
+    console.log("Array destructuring:", first, second);
+
+    // 6. Spread & Rest
+    const arr1 = [1, 2, 3];
+    const arr2 = [...arr1, 4, 5];
+    console.log("Spread:", arr2);
+
+    const sum = (...nums) => nums.reduce((acc, n) => acc + n, 0);
+    console.log("Rest + Reduce:", sum(1, 2, 3, 4));
+
+    // 7. Classes
+    class Person {
+      constructor(name, age) {
+        this.name = name;
+        this.age = age;
+      }
+      
+      greet() {
+        console.log(`Hi, I'm ${this.name}, ${this.age} years old.`);
+      }
+    }
+    const p1 = new Person("Meya", 22);
+    p1.greet();
+
+    // 8. Modules (simulated inline)
+    const square = (x) => x * x;
+    const cube = (x) => x * x * x;
+    console.log("Square:", square(3), "Cube:", cube(3));
+
+    // 9. Promises
+    const fetchData = () => {
+      return new Promise((resolve) => {
+        setTimeout(() => resolve("Data received!"), 1000);
+      });
+    };
+
+    fetchData().then(data => console.log("Promise:", data));
+
+    // 10. Async/Await
+    const fetchDataAsync = async () => {
+      const data = await fetchData();
+      console.log("Async/Await:", data);
+    };
+
+    fetchDataAsync();
+  </script>
+</body>
+</html>
